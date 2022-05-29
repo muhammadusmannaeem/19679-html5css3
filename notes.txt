@@ -1,0 +1,25 @@
+Notes for the Project:
+
+- Just add menu bars image/button, No javascript should be used at all
+- Everything can be used offline
+- Add sub-pages in subfolder
+- Used semantics like header footer nav main article etc. tags
+- One advance form must be added in it having dropdown, checkbox, radio button, etc. everything (Signup for newsletter)
+- Make just one CSS file
+- Create project in XAMPP folder then run by: https://localhost/html-css-city-website/index.html
+
+City: Jehlum
+
+Pages:
+1. Home
+2. About
+3. Contact/Question/Feedback
+4. Newsletter Signup
+5. G-Map (Using iframe) 
+6. Gallery
+7. Tourist Destinations
+8. Blogs/News/Articles
+9. Privacy Policy
+10. Reviews (Submit Review)
+11. FAQs
+12. Events
