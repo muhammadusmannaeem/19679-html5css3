@@ -307,7 +307,7 @@ footer {
     color: var(--white-color);
 }
 
-.jehlum-home p {
+main p {
     text-align: justify;
 }
 
@@ -334,6 +334,22 @@ footer {
     padding: 0;
     margin: 0;
 }
+
+.map .map-container {
+    width: 100%;
+    margin-top: 7vh;
+}
+
+.map .map-container iframe {
+    padding: 0;
+    margin: 0;
+    width: 80%;
+    margin-left: 10%;
+    height: 80vh;
+    box-shadow: 0 0 5px var(--main-color);
+}
+
+
 
 /* Tablets */
 
