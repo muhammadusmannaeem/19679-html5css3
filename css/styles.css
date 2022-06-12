@@ -1,21 +1,21 @@
 @font-face {
     font-family: logoFont;
-    src: url(../fonts/lequire_logo.otf);
+    src: url(../fonts/lequireLogo.otf);
 }
 
 @font-face {
     font-family: titleFont;
-    src: url(../fonts/opensans_h1.ttf);
+    src: url(../fonts/opensansH1.ttf);
 }
 
 @font-face {
     font-family: headingFont;
-    src: url(../fonts/quicksand_h2.ttf);
+    src: url(../fonts/quicksandH2.ttf);
 }
 
 @font-face {
     font-family: paragraphFont;
-    src: url(../fonts/catamaran_p.ttf);
+    src: url(../fonts/catamaranP.ttf);
 }
 
 :root {
@@ -35,7 +35,7 @@ body {
 }
 
 h1 {
-    font-family: titleFont, sans-serif;
+    font-family: titleFont, Arial, sans-serif, Calibri;
     font-weight: bolder;
     font-size: 2rem;
 }
@@ -46,7 +46,7 @@ h2 {
 
 h2,
 p {
-    font-family: paragraphFont, sans-serif;
+    font-family: paragraphFont, Arial, sans-serif, Calibri;
     font-size: 1rem;
     color: var(--black-color);
 }
@@ -62,14 +62,14 @@ p {
     justify-content: space-between;
     align-items: center;
     border-bottom: solid 5px var(--second-color);
-    padding-bottom: 0.5vh 0;
+    padding-bottom: 0.5vh;
     max-width: 1450px;
     margin: 0 7%;
     border-radius: 10px;
 }
 
 #logo p {
-    font-family: logoFont;
+    font-family: logoFont, Arial, sans-serif, Calibri;
     font-size: 1.5rem;
     font-weight: bold;
     margin: 0;
@@ -94,6 +94,10 @@ p {
     width: 30px;
     height: auto;
     z-index: 1;
+}
+
+.navbar-menu-bars a svg rect {
+    fill: var(--main-color) !important;
 }
 
 .navbar-menu-bars a svg:hover {
@@ -155,7 +159,7 @@ footer {
 .newsletter form .form-header label {
     padding: 10px;
     margin: 0;
-    font-family: paragraphFont, sans-serif;
+    font-family: paragraphFont, Arial, sans-serif, Calibri;
     color: var(--white-color);
 }
 
@@ -169,19 +173,19 @@ footer {
 
 .newsletter form .form-values input {
     width: 40%;
+    margin-right: 30px;
     background-color: inherit;
     color: var(--white-color) !important;
     border: none;
     font-family: paragraphFont, sans-serif !important;
     padding: 0.5% 1%;
     border-bottom: solid 1px var(--white-color);
-    font-family: paragraphFont, sans-serif;
+    font-family: paragraphFont, Arial, sans-serif, Calibri;
 }
 
 .newsletter form .form-values input::placeholder {
     /* For Chrome, Firefox, Opera, Safari 10.1+ */
     color: var(--white-color);
-    opacity: 1;
 }
 
 .newsletter form .form-values input:-ms-input-placeholder {
@@ -202,9 +206,9 @@ footer {
 }
 
 .newsletter form .form-values button {
-    background-color: inherit;
+    background-color: var(--third-color);
     color: var(--white-color);
-    font-family: paragraphFont, sans-serif;
+    font-family: paragraphFont, Arial, sans-serif, Calibri;
     border: var(--third-color) solid 2px;
     padding: 0.5% 1%;
     cursor: pointer;
@@ -277,7 +281,7 @@ footer {
     z-index: 0;
     filter: blur(2px);
     filter: contrast(1.5);
-    /* opacity: 80%; */
+    filter: brightness(60%);
 }
 
 .cover-content {
@@ -289,7 +293,6 @@ footer {
     position: relative;
     z-index: 1;
     margin-top: -25%;
-    margin-bottom: 15%;
 }
 
 .cover-content h1 {
@@ -319,6 +322,10 @@ footer {
 .aside-image figure {
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 .aside-image figure img {
@@ -344,6 +351,10 @@ footer {
     #cover-image img {
         width: 100%;
         height: 70vh;
+    }
+
+    .cover-content {
+        margin-bottom: 5vh;
     }
 
     .cover-content h1 {
@@ -420,7 +431,8 @@ footer {
     }
 
     .navbar-menu-list ul li .dropdown .dropdown-content a {
-        border: inherit solid 2px;
+        border: var(--white-color) solid 2px;
+        white-space: nowrap;
     }
 
     .navbar-menu-list ul li .dropdown:hover .dropdown-content {
@@ -489,7 +501,7 @@ footer {
 
     .cover-content {
         margin-top: -20%;
-        margin-bottom: 10%;
+        margin-bottom: 10vh;
     }
 
     .cover-content h1 {
