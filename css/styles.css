@@ -356,13 +356,79 @@ main p {
     width: 100%;
     height: auto;
 }
-    
+
 figure figcaption {
     text-align: center;
     padding: 5px;
 }
 
+.form-container {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 15vh;
+}
 
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    margin-top: 5vh;
+}
+
+.form-group label {
+    margin-bottom: 2%;
+    font-family: paragraphFont, Arial, sans-serif, Calibri;
+    ;
+}
+
+.form-group textarea {
+    font-family: paragraphFont, Arial, sans-serif, Calibri;
+    ;
+    outline: none;
+    border: var(--main-color) 2px solid;
+    max-width: 100%;
+    max-height: 80vh;
+}
+
+.form-group input {
+    font-family: paragraphFont, Arial, sans-serif, Calibri;
+    ;
+    border: none;
+    outline: none;
+    border-bottom: var(--main-color) 2px solid;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-bottom: var(--main-color) 4px solid;
+}
+
+.submit-buttons {
+    width: 50%;
+    margin-left: 40%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.submit-buttons button {
+    padding: 7px 15px;
+    border-radius: 10px;
+    background-color: var(--third-color);
+    color: var(--white-color);
+    font-family: paragraphFont, Arial, sans-serif, Calibri;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+
+.submit-buttons button:hover {
+    background-color: var(--main-color);
+    box-shadow: 0 0 10px var(--main-color);
+}
 
 /* Tablets */
 
@@ -396,6 +462,11 @@ figure figcaption {
 
     h3 {
         font-size: 1.4rem !important;
+    }
+
+    .form-container {
+        width: 70%;
+        margin-left: 15%;
     }
 
 }
@@ -556,7 +627,7 @@ figure figcaption {
     .aside-image p {
         width: 50%;
     }
-    
+
     .split-two,
     .split-three,
     .split-left,
@@ -568,34 +639,43 @@ figure figcaption {
         align-items: center;
         text-align: justify;
     }
-    
+
     .split-two,
     .split-three,
     .split-left,
-    .split-right, .split-item {
+    .split-right,
+    .split-item {
         margin: 1% !important;
         padding: 0 !important;
     }
-    
+
     .split-two,
     .split-three,
     .split-left,
-    .split-right, .split-item img {
+    .split-right,
+    .split-item img {
         width: 100%;
         margin-top: 10vh !important;
         height: 40vh;
     }
-    
+
     .gallery figure img {
         height: 40vh;
     }
-    
-    .split-left .first-item, .split-right .second-item {
+
+    .split-left .first-item,
+    .split-right .second-item {
         width: 34%;
     }
-    
-    .split-left .second-item, .split-right .first-item {
+
+    .split-left .second-item,
+    .split-right .first-item {
         width: 66%;
+    }
+
+    .form-container {
+        width: 50%;
+        margin-left: 25%;
     }
 
 }
