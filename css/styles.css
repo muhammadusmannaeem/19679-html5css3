@@ -341,15 +341,16 @@ main p {
 }
 
 .gallery .split-item {
-    width: 100%;
+    width: 96%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin: 0;
-    padding: 0;
+    padding: 2%;
     margin-top: 7vh;
+    box-shadow: 0 0 10px var(--third-color);
 }
 
 .split-item img {
@@ -386,7 +387,7 @@ figure figcaption {
 
 .form-group textarea {
     font-family: paragraphFont, Arial, sans-serif, Calibri;
-    ;
+    padding: 7px 15px;
     outline: none;
     border: var(--main-color) 2px solid;
     max-width: 100%;
@@ -395,7 +396,7 @@ figure figcaption {
 
 .form-group input {
     font-family: paragraphFont, Arial, sans-serif, Calibri;
-    ;
+    padding: 0 15px;
     border: none;
     outline: none;
     border-bottom: var(--main-color) 2px solid;
@@ -426,6 +427,28 @@ figure figcaption {
 
 
 .submit-buttons button:hover {
+    background-color: var(--main-color);
+    box-shadow: 0 0 10px var(--main-color);
+}
+
+.faq-question {
+    margin-top: 10vh;
+}
+
+.faq-question details {
+    width: 100%;
+}
+
+.faq-question details summary {
+    display: inline;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-family: paragraphFont, Arial, sans-serif, Calibri;
+    color: var(--white-color);
+    background-color: var(--third-color);
+}
+
+.faq-question details summary:hover {
     background-color: var(--main-color);
     box-shadow: 0 0 10px var(--main-color);
 }
@@ -640,26 +663,16 @@ figure figcaption {
         text-align: justify;
     }
 
-    .split-two,
-    .split-three,
-    .split-left,
-    .split-right,
-    .split-item {
-        margin: 1% !important;
-        padding: 0 !important;
+    .gallery .split-item {
+        width: 92%;
+        margin-right: 2%;
+        margin-top: 10vh;
+        padding: 2%;
+        box-shadow: 0 0 10px var(--third-color);
     }
 
-    .split-two,
-    .split-three,
-    .split-left,
-    .split-right,
-    .split-item img {
+    .gallery .split-item img {
         width: 100%;
-        margin-top: 10vh !important;
-        height: 40vh;
-    }
-
-    .gallery figure img {
         height: 40vh;
     }
 
@@ -677,7 +690,6 @@ figure figcaption {
         width: 50%;
         margin-left: 25%;
     }
-
 }
 
 /* Larger than 2k */
