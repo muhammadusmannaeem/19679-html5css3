@@ -92,25 +92,77 @@ p {
 
 /* Mobile First Design */
 
-.navbar-menu-bars {
+#navbar-menu-bars {
     margin: 20px 30px;
 }
 
-.navbar-menu-bars a svg {
+#navbar-menu-bars svg {
     width: 30px;
     height: auto;
     z-index: 1;
 }
 
-.navbar-menu-bars a svg rect {
+#navbar-menu-bars svg rect {
     fill: var(--main-color) !important;
 }
 
-.navbar-menu-bars a svg:hover {
+#navbar-menu-bars svg:hover {
     box-shadow: 0 0 20px var(--third-color);
 }
 
-.navbar-menu-list {
+#navbar-menu-bars-list {
+    display: none;
+    background-color: var(--white-color);
+    margin-left: -100px;
+}
+
+#navbar-menu-bars-list ul {
+    padding: 0 40px;
+}
+
+#navbar-menu-bars-list li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar-menu-bars-list li a {
+    text-decoration: none;
+    color: var(--main-color);
+    border: 2px solid var(--white-color);
+    white-space: nowrap;
+    font-size: 1rem;
+    font-family: paragraphFont, Arial, sans-serif, Calibri;
+    padding: 10px;
+    margin: 0;
+    display: block;
+    text-align: center;
+}
+
+#navbar-menu-bars-list li a:hover {
+    border: 1px solid var(--main-color);
+    box-shadow: 0 0 20px var(--third-color);
+    border-radius: 10px;
+    position: relative;
+    z-index: 11;
+}
+
+#current_selected_nav_mobile a {
+    border: 1px solid var(--main-color) !important;
+    box-shadow: 0 0 20px var(--third-color);
+    border-radius: 10px;
+    position: relative;
+    z-index: 11;
+}
+
+#navbar-menu-bars:hover #navbar-menu-bars-list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 10;
+}
+
+#navbar-menu-list {
     display: none;
 }
 
@@ -512,26 +564,26 @@ figure figcaption {
 
 @media screen and (min-width: 1024px) {
 
-    .navbar-menu-bars {
+    #navbar-menu-bars {
         display: none;
     }
 
-    .navbar-menu-list {
+    #navbar-menu-list {
         display: block;
     }
 
-    .navbar-menu-list ul {
+    #navbar-menu-list ul {
         padding: 0;
         display: flex;
         justify-content: center;
         text-align: center;
     }
 
-    .navbar-menu-list ul li {
+    #navbar-menu-list ul li {
         list-style-type: none;
     }
 
-    .navbar-menu-list ul li a {
+    #navbar-menu-list ul li a {
         text-decoration: none;
         font-family: headingFont, Calibri;
         font-weight: bold;
@@ -543,7 +595,7 @@ figure figcaption {
         z-index: 0;
     }
 
-    .navbar-menu-list ul li a:hover {
+    #navbar-menu-list ul li a:hover {
         border: var(--third-color) solid 2px;
         box-shadow: 0 0 10px var(--third-color);
         border-radius: 10px;
@@ -554,36 +606,36 @@ figure figcaption {
         z-index: 0;
     }
 
-    .navbar-menu-list ul li .dropdown {
+    #navbar-menu-list ul li .dropdown {
         position: relative;
         display: inline-block;
     }
 
-    .navbar-menu-list ul li .dropdown .dropdown-content {
+    #navbar-menu-list ul li .dropdown .dropdown-content {
         padding: 20px;
         position: absolute;
         display: none;
         background-color: var(--white-color);
     }
 
-    .navbar-menu-list ul li .dropdown .dropdown-content a {
+    #navbar-menu-list ul li .dropdown .dropdown-content a {
         border: var(--white-color) solid 2px !important;
         white-space: nowrap;
     }
 
-    .navbar-menu-list ul li .dropdown:hover .dropdown-content {
+    #navbar-menu-list ul li .dropdown:hover .dropdown-content {
         display: flex;
         flex-direction: column;
         z-index: 3;
     }
 
-    .navbar-menu-list ul li .dropdown .dropdown-content a:hover {
+    #navbar-menu-list ul li .dropdown .dropdown-content a:hover {
         z-index: 4;
         border: var(--third-color) solid 2px !important;
     }
 
     #current_selected_nav a {
-        border: var(--third-color) solid 2px;
+        border: var(--third-color) solid 2px !important;
         border-radius: 10px;
         z-index: 1;
     }
